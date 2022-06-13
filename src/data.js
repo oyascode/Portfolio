@@ -1,85 +1,45 @@
-import { CgCodeSlash } from "react-icons/cg"
 import { VscGithubInverted } from 'react-icons/vsc';
 import { IoLogoLinkedin, IoLogoWhatsapp, IoLogoTwitter } from 'react-icons/io'
-
-export const experiences = [
-  {
-    id: 1,
-    date: "2009 - 2013",
-    location: "Lagos Nigeria",
-    title: "To be decided",
-    iconSource: <CgCodeSlash />,
-    description: "lorem lorem ipsum ipsum dolor dolor and so on and so forth"
-  },
-  {
-    id: 2,
-    date: "2009 - 2013",
-    location: "Lagos Nigeria",
-    title: "To be decided",
-    iconSource: <CgCodeSlash />,
-    description: "lorem lorem ipsum ipsum dolor dolor and so on and so forth"
-  },
-  {
-    id: 3,
-    date: "2009 - 2013",
-    location: "Lagos Nigeria",
-    title: "To be decided",
-    iconSource: <CgCodeSlash />,
-    description: "lorem lorem ipsum ipsum dolor dolor and so on and so forth"
-  },
-  {
-    id: 4,
-    date: "2009 - 2013",
-    location: "Lagos Nigeria",
-    title: "To be decided",
-    iconSource: <CgCodeSlash />,
-    description: "lorem lorem ipsum ipsum dolor dolor and so on and so forth"
-  },
-]
+import { AiFillHome } from 'react-icons/ai'
+import { MdWork } from 'react-icons/md'
+import { FaUser, FaEnvelope } from 'react-icons/fa'
 
 
 export const projects = [
   {
     id: 1,
     name: "ChatUp",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624689/chatup450_pfl9ff.jpg",
+    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/chatup400_goxoq6.jpg",
     techs: "ReactJs, Firebase",
-    github: "#"
+    link: "https://splendid-biscotti-1448f8.netlify.app"
   },
   {
     id: 2,
     name: "Crypto Tracker",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624690/crypto450_kdaoxn.jpg",
+    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/crypto400_hq77da.jpg",
     techs: "ReactJs, Material-Ui, Firebase",
-    github: "#"
+    link: "https://quizzical-albattani-da0535.netlify.app"
   },
   {
     id: 3,
     name: "Portfolio",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624690/portfolio450_p03ruy.jpg",
+    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/portfolio400_hrb0fp.jpg",
     techs: "ReactJs, Tailwindcss",
-    github: "#"
+    link: "https://splendid-biscotti-1448f8.netlify.app"
   },
   {
     id: 4,
     name: "Profile",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624689/profile450_ee9jev.jpg",
-    techs: "ReactJs",
-    github: "#"
+    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/profile400_za3vja.jpg",
+    techs: "ReactJs CSS",
+    link: "https://splendid-biscotti-1448f8.netlify.app"
   },
   {
     id: 5,
     name: "Hotel Mockup",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624690/hotel450_ckt96z.jpg",
+    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/hotel400_fmjzey.jpg",
     techs: "HTML, CSS",
-    github: "#"
-  },
-  {
-    id: 6,
-    name: "Internship App Mockup",
-    imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654624689/Internship450_h4yeyt.jpg",
-    techs: "React, Material-Ui",
-    github: "#"
+    link: "https://splendid-biscotti-1448f8.netlify.app"
   },
 ]
 
@@ -109,3 +69,30 @@ export const socialLinks = [
     link: "#"
   },
 ]
+
+export const navLinks = [
+  {
+    id: 1,
+    name: "Home",
+    icon: <AiFillHome className="mr-2" />,
+    href: "#home",
+  },
+  {
+    id: 2,
+    name: "About",
+    icon: <FaUser className="mr-2" />,
+    href: "#about",
+  },
+  {
+    id: 3,
+    name: "Project",
+    icon: <MdWork className="mr-2" />,
+    href: "#project"
+  },
+  {
+    id: 4,
+    name: "Contact",
+    icon: <FaEnvelope className="mr-2" />,
+    href: "#contact"
+  },
+] 
