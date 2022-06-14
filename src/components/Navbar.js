@@ -45,8 +45,8 @@ const Navbar = () => {
             initial={{opacity: 0, scale: 0.5}}
             animate={{opacity: 1, scale: 1.1}}
             exit={{opacity: 0, scale: 0.5}}
-            transition={{type: "ease-in", delay: "0.1s"}}
-            className="flex flex-col items-center justify-evenly gap-6 p-4 top-20 bg-navBar w-300 rounded-lg fixed right-16"
+            transition={{type: "ease-in"}}
+            className="flex flex-col items-center justify-evenly gap-6 p-4 bg-navBar w-300 rounded-lg fixed top-20  right-10"
           >
             {navLinks && (
               navLinks.map(navLink => (

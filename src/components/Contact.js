@@ -28,10 +28,14 @@ const Contact = () => {
     <section 
       id="contact" className='flex flex-col items-center justify-center w-full my-24'
     >
-      <h3 className='text-textBase my-6 text-2xl'>You are welcome to send me an email</h3>
+      <div className='w-80 mb-10 flex items-center justify-center'>
+        <div className='w-[50px] h-[2px] bg-cyan-200 bg-opacity-50'></div>
+        <h3 className='text-textBase my-6 text-2xl mx-3'>Send me an email</h3>
+        <div className='w-[50px] h-[2px] bg-cyan-200 bg-opacity-50'></div>
+      </div>
       <form 
         onSubmit={handleSubmit} 
-        className="  w-[80%] md:w-[600px] border border-zinc-800 shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4"
+        className="  w-[95%] md:w-[600px] border border-zinc-800 shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
           <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="name">
@@ -58,16 +62,18 @@ const Contact = () => {
         </div>
       </form>
       <div className='flex flex-col items-center justify-end mt-20'>
-        <div className='w-[50%] mx-auto border border-zinc-900'></div>
-        <p className='text-2xl mt-16 mb-5 text-gray-400 capitalize'> 
-          Follow me on
-        </p>
+        {/* <div className='w-[50%] mx-auto border border-zinc-900'></div> */}
+        <div className='w-80 flex items-center justify-center'>
+          <div className='w-[50px] h-[2px] bg-cyan-200 bg-opacity-50'></div>
+          <h3 className='text-textBase my-6 text-2xl mx-3'>Send me an email</h3>
+          <div className='w-[50px] h-[2px] bg-cyan-200 bg-opacity-50'></div>
+        </div>
         <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
         {socialLinks && (
           socialLinks.map(socialLink => (
           <motion.a 
           whileTap={{scale: "0.7s"}}
-          key={socialLink.id} href="https://www.google.com" className='w-full md:w-auto px-2 md:px-8 py-3 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out flex items-center justify-center gap-3'
+          key={socialLink.id} href={socialLink.link} className='w-full md:w-auto px-2 md:px-8 py-3 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out flex items-center justify-center gap-3'
           >
           {socialLink.iconSrc}
           <p className='text-lg text-textBase'>{socialLink.name}</p>

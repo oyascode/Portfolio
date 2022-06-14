@@ -25,21 +25,21 @@ export const projects = [
     name: "Portfolio",
     imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/portfolio400_hrb0fp.jpg",
     techs: "ReactJs, Tailwindcss",
-    link: "https://splendid-biscotti-1448f8.netlify.app"
+    link: "https://spontaneous-pixie-5ebfe6.netlify.app"
   },
   {
     id: 4,
     name: "Profile",
     imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/profile400_za3vja.jpg",
     techs: "ReactJs CSS",
-    link: "https://splendid-biscotti-1448f8.netlify.app"
+    link: "https://sage-melomakarona-3e6dd8.netlify.app"
   },
   {
     id: 5,
     name: "Hotel Mockup",
     imgUrl: "https://res.cloudinary.com/dux2rlfzu/image/upload/v1654840152/hotel400_fmjzey.jpg",
     techs: "HTML, CSS",
-    link: "https://splendid-biscotti-1448f8.netlify.app"
+    link: "https://vigilant-thompson-cf649b.netlify.app"
   },
 ]
 
@@ -48,24 +48,24 @@ export const socialLinks = [
     id: 1,
     iconSrc: <VscGithubInverted className="text-textBase text-3xl cursor-pointer" />,
     name: "Github",
-    link: "#"
+    link: "https://github.com/oyascode"
   },
   {
     id: 3,
     iconSrc: <IoLogoLinkedin className="text-blue-700 text-3xl cursor-pointer" />,
     name: "LinkedIn",
-    link: "#"
+    link: "https://www.linkedin.com/in/michael-john-1ab5b593/"
   },
   {
     id: 2,
     iconSrc: <IoLogoTwitter className="text-blue-500 text-3xl cursor-pointer" />,
-    name: "LinkedIn",
+    name: "Twitter",
     link: "#"
   },
   {
     id: 4,
     iconSrc: <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />,
-    name: "WhatApp",
+    name: "WhatsApp",
     link: "#"
   },
 ]
