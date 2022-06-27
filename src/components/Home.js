@@ -3,9 +3,13 @@ import Spline  from '@splinetool/react-spline';
 
 const Home = () => {
   return (
-    <section id="home" className='flex flex-col items-center justify-center w-full md:object-contain mx-auto min-h-screen'>
-      <Spline scene="https://prod.spline.design/daMVFMfydJctVrKA/scene.splinecode" />
+    <section id="home" className='w-[100%] min-h-full flex items-center justify-center mt-20 object-cover'>
+      <Spline
+        className='sm:h-[100vh]' 
+        scene="https://prod.spline.design/KS99iXpXcwlm7fCp/scene.splinecode" 
+      />
     </section>
+    
   )
 }
 
